@@ -11,19 +11,17 @@
 
 ### Screenshot
 
-- Mobile Dark
-
+- MobileDark
 ![](./screenshots/mobile-dark.png)
 
-- Mobile Light
+- MobileLight
 ![](./screenshots/mobile-light.png)
 
-- Desktop Dark
-
+- DesktopDark
 ![](./screenshots/desktop-dark.png)
 
-- Desktop Light
 
+- DesktopLight
 ![](./screenshots/desktop-light.png)
 
 ### Links
