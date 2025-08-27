@@ -1,21 +1,52 @@
 /* eslint-disable react/prop-types */
-import { Player } from "@lottiefiles/react-lottie-player";
-import { InfoText, SingleService } from "./Services.style";
+import {
+  ServiceCard,
+  ServiceIcon,
+  ServiceContent,
+  ServiceTitle,
+  ServiceShortDesc,
+  ServiceInfo,
+  ServiceFeatures,
+  FeatureItem,
+  ServiceOverlay,
+  ServiceHoverDetails,
+} from './Services.style';
+import { useState } from 'react';
 
-const SingleServ = ({ src, title, info }) => {
+const SingleServ = ({ icon, title, shortDesc, info, features, color }) => {
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
-    <SingleService>
-      <Player
-        autoplay
-        loop
-        src={src}
-        style={{ height: "150px", width: "150px" }}
-      ></Player>
-      <InfoText>
-        <h3>{title}</h3>
-        <p>{info}</p>
-      </InfoText>
-    </SingleService>
+    <ServiceCard
+      color={color}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      <ServiceOverlay isHovered={isHovered} color={color} />
+
+      <ServiceIcon isHovered={isHovered}>{icon}</ServiceIcon>
+
+      <ServiceContent>
+        <ServiceTitle>{title}</ServiceTitle>
+        <ServiceShortDesc>{shortDesc}</ServiceShortDesc>
+        <ServiceInfo>{info}</ServiceInfo>
+
+        <ServiceFeatures>
+          {features.map((feature, index) => (
+            <FeatureItem key={index}>{feature}</FeatureItem>
+          ))}
+        </ServiceFeatures>
+      </ServiceContent>
+
+      <ServiceHoverDetails isHovered={isHovered} color={color}>
+        <h4>Key Features:</h4>
+        <ul>
+          {features.map((feature, index) => (
+            <li key={index}>{feature}</li>
+          ))}
+        </ul>
+      </ServiceHoverDetails>
+    </ServiceCard>
   );
 };
 export default SingleServ;

@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle, css } from "styled-components";
+import styled, { createGlobalStyle, css } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
 
@@ -145,7 +145,7 @@ export const MainHeading = styled.h2`
 
   &::after {
     position: absolute;
-    content: "";
+    content: '';
     width: 100%;
     height: 3.5px;
     bottom: -5px;
@@ -179,15 +179,16 @@ export const Highlight = styled.span`
   margin: 2px 0;
 
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-color: var(--highlightClr);
-    transform: rotate(-2deg);
+    transform: rotate(-0.5deg);
     z-index: -1;
+    border-radius: 5px;
   }
 `;
 

@@ -1,55 +1,41 @@
-import { Highlight, P } from "../../styles/GlobalStyles";
-import { Link } from "./About.style";
+import { Highlight, P } from '../../styles/GlobalStyles';
 
 const Brief = () => {
-  const myAge = new Date().getFullYear() - 1995;
-
   return (
     <>
       <P>
-        Hi, my name is <Highlight>Ragab Magdy</Highlight> I&apos;m {myAge} years
-        old. I got a bachelor degree from Faculty of Languages and Translation,
-        Al-Azhar university( 2019 ). I&apos;m really passionate about
-        <Highlight>Javascript</Highlight> and{" "}
-        <Highlight>Web Development</Highlight>.
+        Hi, my name is <Highlight>Ragab Magdy</Highlight> and I&apos;m a
+        passionate <Highlight>Frontend Developer</Highlight> with over{' '}
+        <Highlight>3 years of professional experience</Highlight> specializing
+        in modern web technologies including <Highlight>React</Highlight>,{' '}
+        <Highlight>TypeScript</Highlight>, and{' '}
+        <Highlight>Tailwind CSS</Highlight>.
       </P>
 
       <P>
-        My experience as a tech support in an international company helped me
-        collaborate with customers from all over the world.
+        Throughout my career, I&apos;ve had the privilege of working remotely
+        with companies based in <Highlight>Saudi Arabia</Highlight> and{' '}
+        <Highlight>Lebanon</Highlight>, developing scalable and user-friendly
+        solutions for diverse markets across the Middle East.
       </P>
+
       <P>
-        Additionally, working with different customers isn&apos;t an easy task,
-        however, it has helped me become efficient, productive, and fast even in
-        a very stressful environment, which is an important skill in the tech
-        industry.
+        My expertise lies in building <Highlight>SaaS products</Highlight> and{' '}
+        <Highlight>comprehensive dashboards</Highlight> that solve real business
+        problems. I&apos;ve successfully delivered numerous projects ranging
+        from complex data visualization platforms to intuitive admin panels and
+        customer-facing applications.
       </P>
+
       <P>
-        I started learning web development back in 2020. I&apos;ve spent the
-        last several months working with HTML, CSS, JavaScript, React.js
-        building everything from landing pages to APIs.
-      </P>
-      <P>
-        I searched many different sources to learn about{" "}
-        <Highlight>interactive</Highlight> web pages for example:{" "}
-        <Link
-          href="https://developer.mozilla.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Developer mozilla
-        </Link>{" "}
-        , I also took some online courses like{" "}
-        <Link
-          href="https://www.udemy.com/course/the-ultimate-react-course"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          The Ultimate React Course 2023: React, Redux & More
-        </Link>{" "}
-        ...
+        Working remotely with international teams has enhanced my communication
+        skills and ability to collaborate effectively across different time
+        zones and cultures. This experience has made me adaptable,
+        self-motivated, and proficient at delivering high-quality results in
+        fast-paced environments.
       </P>
     </>
   );
 };
+
 export default Brief;

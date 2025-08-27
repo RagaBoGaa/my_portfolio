@@ -1,16 +1,16 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 
-import HeroBgAnimation from "./HeroBgAnimation";
+import HeroBgAnimation from './HeroBgAnimation';
 
-import { Container, Row, Section } from "../../styles/GlobalStyles";
-import { Heading, LeftSide, Name, RightSide, Stack, Tags } from "./Hero.style";
+import { Container, Row, Section } from '../../styles/GlobalStyles';
+import { Heading, LeftSide, Name, RightSide, Stack, Tags } from './Hero.style';
 
-import CTAButtons from "./CTAButtons";
-import Social from "../../utils/Social/Social";
+import CTAButtons from './CTAButtons';
+import Social from '../../utils/Social/Social';
 
 const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const text = ["fly-high", "committed", "self-taught", "passionate"];
+  const text = ['fly-high', 'committed', 'self-taught', 'passionate'];
 
   useEffect(() => {
     const timeout = setTimeout(() => {
@@ -26,7 +26,7 @@ const Hero = () => {
   return (
     <Section>
       <Container>
-        <Row variation="column">
+        <Row variation='column'>
           <LeftSide>
             <div>
               <Heading>
@@ -44,7 +44,7 @@ const Hero = () => {
           </LeftSide>
 
           <RightSide>
-            <img src="hand-coding-animate.svg" alt="hand-coding image" />
+            <img src='hand-coding-animate.svg' alt='hand-coding image' />
           </RightSide>
         </Row>
 
